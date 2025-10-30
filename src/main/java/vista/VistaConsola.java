@@ -1,6 +1,9 @@
+package vista;
+
+import modelo.Vinilo;
 import java.util.List;
 
-public class ImpresorColeccion {
+public class VistaConsola {
 
     public void mostrarEncabezado(int capacidadMaxima) {
         System.out.println("Espacio máximo colección: " + capacidadMaxima);
@@ -33,5 +36,13 @@ public class ImpresorColeccion {
 
     public void mostrarError(String mensaje) {
         System.err.println("Error: " + mensaje);
+    }
+
+    public void mostrarMensaje(String mensaje) {
+        System.out.println(mensaje);
+    }
+
+    public void mostrarSeparador() {
+        System.out.println("----------------------------------------");
     }
 }

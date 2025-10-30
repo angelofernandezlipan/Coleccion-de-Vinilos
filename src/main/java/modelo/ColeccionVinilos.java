@@ -1,7 +1,9 @@
+package modelo;
+
 import java.util.ArrayList;
 import java.util.List;
 
- // Gestiona una colección de vinilos con capacidad limitada.
+// Lógica de negocio
 
 public class ColeccionVinilos {
     private final int capacidadMaxima;
@@ -14,7 +16,6 @@ public class ColeccionVinilos {
         this.capacidadMaxima = capacidadMaxima;
         this.vinilos = new ArrayList<>();
     }
-
 
     public boolean agregarVinilo(Vinilo vinilo) {
         if (vinilo == null) {
@@ -36,7 +37,6 @@ public class ColeccionVinilos {
                 .findFirst()
                 .orElse(null);
     }
-
 
     public boolean contieneArtista(String artista) {
         return buscarPorArtista(artista) != null;

@@ -1,3 +1,5 @@
+package modelo;
+
 public class Vinilo {
     private final String artista;
     private final String nombreDisco;
